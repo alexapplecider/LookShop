@@ -193,6 +193,7 @@ $RECYCLE.BIN/
 # Packages
 *.egg
 *.egg-info
+dist/
 eggs/
 parts/
 var/
@@ -219,7 +220,3 @@ pip-log.txt
 .idea
 out
 node_modules/
-node_modules/gulp-sass/node_modules/node-sass/node_modules/sass-graph/node_modules/lodash/fp/useWith.js
-node_modules/
-.idea/
-terminal.glue
