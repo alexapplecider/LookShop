@@ -1,5 +1,4 @@
 @import "global/normalize";
-
 @import "global/fonts";
 @import "global/variables";
 @import "global/sprite-svg";
@@ -7,3 +6,112 @@
 @import "global/icons";
 @import "global/scaffolding";
 @import "global/general";
+.full-color {
+    background-color: $c-primary;
+}
+
+// HEADER
+.header-top-line {
+    min-height: 30px;
+    font-size: $f-sub-menu-size;
+    color: #fff;
+    &__currency {
+        padding: 0 10px;
+    }
+    &__search {
+        padding: 0 10px;
+    }
+}
+
+.custom-care {
+    align-self: center;
+}
+
+.user-info {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    align-items: center;
+}
+
+.header-top-line__account {
+    position: relative;
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    &::after {
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        content: "";
+        width: 15px;
+        height: 13px;
+        background-image: url(../img/icons/contact---user.png);
+    }
+}
+
+.logo-and-menu {
+    padding-top: 20px;
+}
+
+.logo {
+    padding-top: 20px;
+}
+
+.menu {
+    margin-top: 13px;
+    align-self: center;
+}
+
+.menu-list__item {
+    display: inline-block;
+    margin-left: 32px;
+    &>i {
+        margin-left: 6px;
+    }
+}
+
+.bucket-info {
+    width: 215px;
+    margin-top: 20px;
+    &>select {
+        font-size: 12px;
+        width: 100%;
+        padding: 10px 11px 10px 8px;
+    }
+    &__items {
+        font-size: 12px;
+        position: relative;
+        border: 1px solid #bdbdbd;
+        border-top: 0;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        text-align: right;
+        &::after {
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            content: '';
+            width: 27px;
+            height: 25px;
+            background-image: url(../img/sprite-icons.png);
+        }
+    }
+    &__items-text {
+        display: inline-block;
+        padding-right: 7px;
+        margin-right: 6px;
+        border-right: 2px solid #bdbdbd;
+    }
+    &__items-money {
+        display: inline-block;
+        padding-right: 12px;
+
+    }
+}
+
+// HEADER
