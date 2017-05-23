@@ -6,11 +6,14 @@
 @import "global/icons";
 @import "global/scaffolding";
 @import "global/general";
-.full-color {
+
+.full-bg-color {
     background-color: $c-primary;
 }
 
 // HEADER
+
+// верхняя черная линия
 .header-top-line {
     min-height: 30px;
     font-size: $f-sub-menu-size;
@@ -20,11 +23,15 @@
     }
     &__search {
         padding: 0 10px;
+        cursor: pointer;
     }
 }
 
 .custom-care {
     align-self: center;
+    &__text {
+        text-transform: uppercase;
+    }
 }
 
 .user-info {
@@ -35,10 +42,7 @@
 
 .header-top-line__account {
     position: relative;
-    padding-left: 35px;
-    padding-right: 15px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding: 8px 15px 8px 35px;
     border-left: 1px solid #444444;
     border-right: 1px solid #444444;
     &::after {
@@ -51,11 +55,12 @@
         background-image: url(../img/icons/contact---user.png);
     }
 }
+// верхняя черная линия
+
 
 .logo-and-menu {
     padding-top: 20px;
 }
-
 .logo {
     padding-top: 20px;
 }
@@ -64,14 +69,53 @@
     margin-top: 13px;
     align-self: center;
 }
-
 .menu-list__item {
+    position: relative;
     display: inline-block;
     margin-left: 32px;
-    &>i {
+    padding-bottom: 15px;
+    &>a>i {
         margin-left: 6px;
     }
+    &>a:hover {
+        text-decoration: underline;
+    }
+    &>a:hover + .item-drop-menu {
+        opacity: 1;
+        top: 20px;
+        transition: 0.5s opacity;
+    }
 }
+
+// Выпадающее меню
+.item-drop-menu {
+    border-top: 10px solid tra;
+    position: absolute;
+    top: -9999px;
+    left: -5px;
+    width: 100px;
+    opacity: 0;
+    &__list-item {
+        background-color: #fd936e;
+        padding: 5px 5px;
+        border: 1px solid #d8d8d8;
+    }
+    &__list-item:hover {
+        background: #de6b43;
+        padding: 6px 4px 4px 6px;
+        transition: 0.5s all;
+    }
+    &__list-item > a {
+        text-decoration: none;
+        &:hover {
+        text-decoration: underline;
+        }
+    }
+}
+
+// Выпадающее меню
+
+
 
 .bucket-info {
     width: 215px;
@@ -80,11 +124,17 @@
         font-size: 12px;
         width: 100%;
         padding: 10px 11px 10px 8px;
+        border: 1px solid #d7d7d7;
+        color: #949393;
+    }
+    & > select > option {
+        color: #949393;
     }
     &__items {
         font-size: 12px;
+        color: #949393;
         position: relative;
-        border: 1px solid #bdbdbd;
+        border: 1px solid #d7d7d7;
         border-top: 0;
         padding-top: 11px;
         padding-bottom: 10px;
@@ -105,13 +155,26 @@
         display: inline-block;
         padding-right: 7px;
         margin-right: 6px;
-        border-right: 2px solid #bdbdbd;
+        border-right: 2px solid #d7d7d7;
     }
     &__items-money {
         display: inline-block;
         padding-right: 12px;
-
     }
 }
 
 // HEADER
+
+
+
+
+// CONTENT
+
+// CONTENT
+
+
+
+
+// FOOTER
+
+// FOOTER
