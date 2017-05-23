@@ -9,6 +9,9 @@
 .full-bg-color {
     background-color: $c-primary;
 }
+.second-bg-color {
+    background-color: #ededed;
+}
 
 // HEADER
 // верхняя черная линия
@@ -183,9 +186,10 @@
     background-color: #fff;
     z-index: 2000;
 }
-// SLIDER
 .slide {
     position: relative;
+    // height: 100%;
+    // max-height: 440px;
 }
 .shop-now {
     position: absolute;
@@ -203,12 +207,103 @@
     & i {
         transform: rotate(90deg);
     }
+    &:hover {
+            text-decoration: underline;
+    }
 }
+// SLIDER
+
 // HEADER
 
-// CONTENT
 
 // CONTENT
+.subscribe-line {
+    margin-top: 75px;
+    min-height: 55px;
+    font-size: 12px;
+    color: #6b6b6b;
+    margin-bottom: 40px;
+    &__text {
+    position: relative;
+    align-self: center;
+    
+    }
+    &__input {
+        margin-left: 10px;
+        padding-right: 26px;
+        padding-left: 9px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+     &__input + button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            padding-top: 6px;
+            width: 28px;
+            height: 28px;
+            background-color: #fd936e;
+            box-shadow: 0 3px 0 #dd6b44;
+        }
+    }
+
+.social {
+    justify-content: center;
+    align-items: center;
+    &__text {
+        margin-right: 15px;
+    }
+    &__text-link {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    display: inline-block;
+    }
+    &__text-link-twitter {
+        padding: 16px 23px;
+        background-color: #ededed;
+    }
+    &__text-link-pinterest {
+    padding: 15px 23px;
+    background-color: #fff;
+    }
+}
+
+
+.best-items {
+    min-height: 340px;
+    margin-bottom: 50px;
+    &__wrap {
+        width: 50%;
+    }
+    &__fourth-items {
+        position: relative;
+    }
+    &__fourth-items button {
+        position: absolute;
+        top: 73%;
+        left: 10%;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 98px;
+        height: 29px;
+        background-color: #4fafa0;
+        cursor: pointer;
+        & i {
+        transform: rotate(90deg);
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+// CONTENT
+
+
 // FOOTER
 
 // FOOTER
