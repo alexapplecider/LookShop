@@ -9,6 +9,7 @@
 .full-bg-color {
     background-color: $c-primary;
 }
+
 .second-bg-color {
     background-color: #ededed;
 }
@@ -163,10 +164,12 @@
     position: relative;
     margin-top: 20px;
 }
+
 .slick-slider img {
     width: 100%;
     height: auto;
 }
+
 .slick-prev-arrow {
     position: absolute;
     top: calc(50% - 58px);
@@ -175,8 +178,9 @@
     height: 117px;
     background-color: #fff;
     z-index: 2000;
-   ;
+    ;
 }
+
 .slick-next-arrow {
     position: absolute;
     top: calc(50% - 58px);
@@ -186,11 +190,12 @@
     background-color: #fff;
     z-index: 2000;
 }
+
 .slide {
-    position: relative;
-    // height: 100%;
+    position: relative; // height: 100%;
     // max-height: 440px;
 }
+
 .shop-now {
     position: absolute;
     top: 71%;
@@ -208,14 +213,12 @@
         transform: rotate(90deg);
     }
     &:hover {
-            text-decoration: underline;
+        text-decoration: underline;
     }
 }
+
 // SLIDER
-
 // HEADER
-
-
 // CONTENT
 .subscribe-line {
     margin-top: 75px;
@@ -224,9 +227,8 @@
     color: #6b6b6b;
     margin-bottom: 40px;
     &__text {
-    position: relative;
-    align-self: center;
-    
+        position: relative;
+        align-self: center;
     }
     &__input {
         margin-left: 10px;
@@ -235,18 +237,18 @@
         padding-top: 9px;
         padding-bottom: 9px;
     }
-     &__input + button {
-            position: absolute;
-            right: 0;
-            top: 0;
-            display: inline-block;
-            padding-top: 6px;
-            width: 28px;
-            height: 28px;
-            background-color: #fd936e;
-            box-shadow: 0 3px 0 #dd6b44;
-        }
+    &__input+button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        padding-top: 6px;
+        width: 28px;
+        height: 28px;
+        background-color: #fd936e;
+        box-shadow: 0 3px 0 #dd6b44;
     }
+}
 
 .social {
     justify-content: center;
@@ -255,23 +257,22 @@
         margin-right: 15px;
     }
     &__text-link {
-    padding-left: 23px;
-    padding-right: 23px;
-    padding-top: 15px;
-    padding-bottom: 16px;
-    background-color: #fff;
-    display: inline-block;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        background-color: #fff;
+        display: inline-block;
     }
     &__text-link-twitter {
         padding: 16px 23px;
         background-color: #ededed;
     }
     &__text-link-pinterest {
-    padding: 15px 23px;
-    background-color: #fff;
+        padding: 15px 23px;
+        background-color: #fff;
     }
 }
-
 
 .best-items {
     min-height: 340px;
@@ -294,16 +295,85 @@
         background-color: #4fafa0;
         cursor: pointer;
         & i {
-        transform: rotate(90deg);
+            transform: rotate(90deg);
         }
         &:hover {
             text-decoration: underline;
         }
     }
 }
+
+// TABS
+.tab-block {
+    margin-bottom: 23px;
+}
+
+.tab-block>input {
+    display: none;
+    &:checked+label {
+        background-color: #fd936e;
+        color: white;
+    }
+}
+
+input[id="tab-1"]:checked~.content-tabs .content-tabs__article-1,
+input[id="tab-2"]:checked~.content-tabs .content-tabs__article-2,
+input[id="tab-3"]:checked~.content-tabs .content-tabs__article-3,
+input[id="tab-4"]:checked~.content-tabs .content-tabs__article-4 {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 18px 18px 16px 18px;
+}
+
+.content-tabs {
+    position: relative;
+    & article {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fd936e;
+        padding: 30px 0;
+        display: none;
+    }
+}
+
+// TABS
+// TABS SLIDER
+.slide-item {
+    font-size: 12px;
+    width: 220px !important;
+    height: 395px;
+    margin: 0 30px;
+    background-color: white;
+    &__photo {
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    &__price {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    &__add {
+        display: block;
+        padding: 11px 30px 12px 10px;
+        background-color: #fd936e;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+// TABS SLIDER
 // CONTENT
-
-
 // FOOTER
-
 // FOOTER

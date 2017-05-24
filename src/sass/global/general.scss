@@ -6,6 +6,10 @@
   color: $c-primary;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container-full {
   width: 100%;
 }
